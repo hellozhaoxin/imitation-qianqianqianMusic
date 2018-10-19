@@ -1,0 +1,28 @@
+.play-title{
+    width: 80%;
+    margin: 0.2rem auto;
+    font-size: 20px;
+    color: #000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.play-author{
+    width: 80%;
+    margin: 0.2rem auto;
+    color: #a8a8a8;
+}
+.lrc{
+    width: 80%;
+    height:1rem ;
+    margin: 0.5rem auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.playMusic{
+    margin-top: 0.5rem;
+}
+audio{
+    width: 80%;
+    margin:0 auto;
+}

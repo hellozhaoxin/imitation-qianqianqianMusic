@@ -1,0 +1,19 @@
+/**
+ * Created by john on 2018/9/12.
+ */
+main.config(['$routeProvider',function($routeProvider){
+    $routeProvider
+        .when('/home',{
+            templateUrl:'view/home.html',
+            controller:'home'
+        })
+        .when('/song',{
+            templateUrl:'view/songLis.html'
+        })
+        .when('/play',{
+            templateUrl:'view/play.html'
+        })
+        .otherwise({
+            redirectTo:'/play'
+        })
+}]);

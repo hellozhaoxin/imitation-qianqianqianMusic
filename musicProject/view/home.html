@@ -1,0 +1,14 @@
+<div class="song">
+	<a href="#!/song" ng-repeat="songlis in allSong track by $index" id="{{allSong[$index].data.billboard.billboard_type}}" ng-click="categroy(allSong[$index].data.billboard.billboard_type)">
+		<div class="img-box">
+			<i class="iconfont playicon">&#xe710;</i>
+			<img src="{{allSong[$index].data.billboard.pic_s210}}" alt=""/>
+		</div>
+		<ul class="song-list">
+			<li ng-repeat="newlist in allSong[$index].data.song_list track by $index">
+				<i>{{$index+1}}</i>
+				<span>{{newlist.title}}</span>
+			</li>
+		</ul>
+    </a>
+</div>

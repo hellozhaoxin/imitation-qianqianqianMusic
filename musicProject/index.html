@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="mainCtr">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta charset="utf-8" content="never" name="referrer" >
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="icon/iconfont.css"/>
+    <link rel="stylesheet" href="musicLess/Mless/nav.css"/>
+    <link rel="stylesheet" href="musicLess/Mless/home.css"/>
+    <link rel="stylesheet" href="musicLess/Mless/songLis.css"/>
+    <link rel="stylesheet" href="musicLess/Mless/play.css"/>
+</head>
+<body>
+<!--导航栏开始-->
+<div class="nav">
+    <ul>
+        <li class="active"><a href="#!/home">榜单</a></li>
+        <li><a href="#!/song">歌手</a></li>
+        <li><a href="#!/my">我的</a></li>
+    </ul>
+    <div class="search">
+        <a href="#" class="iconfont">&#xe6fe;</a>
+    </div>
+</div>
+<div class="container">
+    <div ng-view=""></div>
+</div>
+<!--导航栏结束-->
+<!--引入库文件-->
+<script src="js/libs/jquery-1.12.3.min.js"></script>
+<script src="js/libs/angular.js"></script>
+<script src="js/libs/angular-route.js"></script>
+<!--引入rem文件-->
+<script src="js/rem/rem.js"></script>
+<!--引入主控制器 -->
+<script src="js/ctr/mainCtr.js"></script>
+<!--引入路由-->
+<script src="js/route/route.js"></script>
+<!--引入服务-->
+<script src="js/factor/factory.js"></script>
+<!--引入榜单页面控制器-->
+<script src="js/ctr/homeCtr.js"></script>
+<!--导航条选中部分高亮显示-->
+<script src="js/directive/directive.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!--海报大图开始-->
+ <div class="poster">
+     <img src="{{poster}}" alt=""/>
+ </div>
+<!--批量下载开始-->
+<div class="download">
+    <div class="cache-song">
+        <a href="#">
+            批量下载
+            <i class="iconfont">&#xe518;</i>
+        </a>
+    </div>
+    <div class="open-song"><a href="#">在App中打开</a></div>
+</div>
+
+<!--歌单榜列表详情开始-->
+ <div class="song-details">
+    <ul class="details-list">
+        <li ng-repeat="detailsLis in songdetailsArr track by $index" ng-click="mid(songdetailsArr[$index].song_id)">
+            <i>{{$index+1}}</i>
+            <a href="#!/play">
+                <p class="songTitle">{{detailsLis.album_title}}</p>
+                <p class="author">{{detailsLis.author}}</p>
+            </a>
+            <i class="iconfont">&#xe518;</i>
+        </li>
+    </ul>
+ </div>
